@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FoodBridge | Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-highest": "#dbdddd",
+                        "on-surface": "#2d2f2f",
+                        "on-primary": "#d1ffc8",
+                        "primary-fixed-dim": "#a4eb9c",
+                        "outline-variant": "#acadad",
+                        "on-tertiary-fixed-variant": "#634900",
+                        "background": "#f6f6f6",
+                        "tertiary-container": "#fec330",
+                        "tertiary": "#765600",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-dim": "#3e535c",
+                        "surface": "#f6f6f6",
+                        "inverse-primary": "#b2faa9",
+                        "on-tertiary": "#fff1db",
+                        "tertiary-fixed": "#fec330",
+                        "secondary-container": "#cfe6f2",
+                        "surface-dim": "#d3d5d5",
+                        "on-secondary-fixed": "#2d424c",
+                        "on-background": "#2d2f2f",
+                        "tertiary-dim": "#674b00",
+                        "surface-bright": "#f6f6f6",
+                        "primary": "#266829",
+                        "tertiary-fixed-dim": "#efb520",
+                        "on-tertiary-fixed": "#402d00",
+                        "secondary-fixed-dim": "#c1d8e4",
+                        "on-error": "#ffefec",
+                        "on-primary-container": "#1f6223",
+                        "surface-tint": "#266829",
+                        "inverse-surface": "#0c0f0f",
+                        "on-surface-variant": "#5a5c5c",
+                        "on-primary-fixed-variant": "#2a6c2c",
+                        "primary-container": "#b2faa9",
+                        "surface-container-low": "#f0f1f1",
+                        "surface-container": "#e7e8e8",
+                        "inverse-on-surface": "#9c9d9d",
+                        "on-secondary": "#e4f5ff",
+                        "secondary-fixed": "#cfe6f2",
+                        "on-primary-fixed": "#054e12",
+                        "on-error-container": "#520c00",
+                        "primary-dim": "#185c1e",
+                        "on-secondary-fixed-variant": "#495f69",
+                        "surface-container-high": "#e1e3e3",
+                        "primary-fixed": "#b2faa9",
+                        "on-tertiary-container": "#584000",
+                        "secondary": "#495f69",
+                        "surface-variant": "#dbdddd",
+                        "error": "#b02500",
+                        "on-secondary-container": "#40555f",
+                        "error-container": "#f95630",
+                        "outline": "#767777",
+                        "error-dim": "#b92902"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.bg-login-hero {
+    background-image: linear-gradient(to bottom, rgba(38, 104, 41, 0.4), rgba(246, 246, 246, 1)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuAFR5QQfT_qsVq47xLnCHPnbBLzap4lhkrujDt-PRh0sNQtOiyRiZ7gLIsAXzKdTo6dBix8TUkZhTGSZRPbckcF8LtzW0Wy7sRRjUyapMWDtCUbuB5kfLRMZbDoeEsPM424tx6YKrY4U4qqkR8XOZXzPu4bu42amvkDRrM2QhQogAvYLL4He54XJ27UvPy6Il_Y4gdbiQcStk2Sp8hrmyU3eaJ05Z74HXlvmbmycLXM9mkJ3npgaw8AqLbCevD9XVtCoiO0aM6Hh3BY);
+    background-size: cover;
+    background-position: center
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased min-h-screen flex flex-col items-center justify-center p-4">
+<!-- Suppression of Shell as per Transactional Rule: No BottomNavBar or SideNav on Login -->
+<main class="w-full max-w-[1200px] grid grid-cols-1 md:grid-cols-2 bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_12px_32px_rgba(45,47,47,0.06)] min-h-[700px]">
+<!-- Left Column: Branding & Aesthetic -->
+<div class="hidden md:flex flex-col justify-between p-12 bg-login-hero relative" data-alt="Close-up of fresh organic vegetables in a wooden crate with warm morning sunlight and soft focus green garden background">
+<div class="relative z-10">
+<div class="flex items-center gap-2 mb-12">
+<span class="material-symbols-outlined text-on-primary bg-primary p-2 rounded-xl" data-icon="eco">eco</span>
+<span class="text-2xl font-extrabold tracking-tight font-headline text-on-primary">FoodBridge</span>
+</div>
+<h2 class="text-4xl font-extrabold font-headline leading-tight text-white mb-6">
+                    Reducing Waste,<br/>Feeding Hope.
+                </h2>
+<p class="text-on-primary/90 text-lg max-w-sm leading-relaxed">
+                    Connecting surplus food from restaurants directly to those who need it most through our verified partner network.
+                </p>
+</div>
+<div class="relative z-10 bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
+<div class="flex items-center gap-4 mb-3">
+<div class="flex -space-x-3">
+<img alt="User" class="w-8 h-8 rounded-full border-2 border-white" data-alt="Portrait of a smiling young chef in a white uniform with professional kitchen background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhKnO9eRbPtuL8k6faIFwYvLKJ7M4jMmW53yT1Zh_jTsJzPAaNaIrMzh9ulOlp3HkgqQULQ3R7EwIULt6JFSnuHMS9KbWe6tA70uXDsBiXfUi0w0Nd_QTCJ7KWQ9keGTkDZUchdd9E4oqQV6nC-n9Iq55cvNBQEXIrmuftgDB9tEnABfdwZ5vawnPoqO2sOYmvT6HHvJU_R_Thj9k2lbdsrmWY7n55AY-3QssERT-hPEHuEcIeTlip721LxcYaK2Ov3eD0RIg6cSmg"/>
+<img alt="User" class="w-8 h-8 rounded-full border-2 border-white" data-alt="Close-up of a friendly delivery volunteer woman wearing a green polo shirt and a warm smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmYkMlCstogLtiqBvfKtffBM5-x5CvKDVgS6wCK8wx1Sm6Qk10B-UGdSw7V2u_2GoBDhkP2ewXU5U1whQ9Hr2CunjVCpfPhzwIg8d70h65GMC_NTauuIMDNSu22wVRFa8BXoEtq2wW52gUK2woUZ-hfZKiE1vLEIGkn43HzWVIcnQlz0L1ZopXExgMdKoELHvLJlXeqi6FTiRi0rsL7VqjZFjFzZGscdCMrOfchEkg9niKf7mVIXQWyOjfb1qGIa8ZqOQhMDwOMhfj"/>
+<img alt="User" class="w-8 h-8 rounded-full border-2 border-white" data-alt="Portrait of a mature man in casual clothing representing a local community organizer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTRk8vxelLHN5_k-1wy3Ot98rVqcFqBUbt3nqF3F9YXASEDeUiz8UCs8ufxa1NBAezev5oPeowzM_H3i9lwZAYpJlmWPjTFz5QV-_z8SstMjqTDwLJeDwIAMmDUnjn_2wYg9fVPooDpDCWgOU3sLgG5cCno2TrAzttlqTL8A8rbooSXoMWvV1nxzToUb6j2WBTbI0zPeYHjrIHe1bA6TaPx7JWW56y-K63od46tsdBREKtNWgF9rxM_nc4AS6dtam120bTonlU2yQO"/>
+</div>
+<span class="text-white font-semibold text-sm">+2.4k active partners</span>
+</div>
+<p class="text-white/80 text-sm italic">"FoodBridge helped us donate over 500 meals last month alone."</p>
+</div>
+</div>
+<!-- Right Column: Login Form -->
+<div class="p-8 md:p-16 flex flex-col justify-center">
+<div class="mb-10">
+<h1 class="text-3xl font-extrabold font-headline text-on-surface mb-2 tracking-tight">Welcome Back to FoodBridge</h1>
+<p class="text-on-surface-variant text-sm">Select your role and enter your credentials to continue.</p>
+</div>
+<!-- Role Selection -->
+<div class="mb-8">
+<label class="text-xs font-bold uppercase tracking-wider text-outline mb-4 block">Select Your Role</label>
+<div class="grid grid-cols-3 gap-3">
+<!-- Restaurant (Active) -->
+<button class="flex flex-col items-center justify-center p-4 rounded-xl border-2 border-primary bg-primary-container text-on-primary-container transition-all active:scale-95">
+<span class="material-symbols-outlined mb-2 text-2xl" data-icon="restaurant" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="text-[11px] font-bold uppercase tracking-wide">Restaurant</span>
+</button>
+<!-- NGO -->
+<button class="flex flex-col items-center justify-center p-4 rounded-xl border-2 border-surface-container-high bg-surface text-on-surface-variant hover:border-outline-variant transition-all active:scale-95">
+<span class="material-symbols-outlined mb-2 text-2xl" data-icon="corporate_fare">corporate_fare</span>
+<span class="text-[11px] font-bold uppercase tracking-wide">NGO</span>
+</button>
+<!-- Volunteer -->
+<button class="flex flex-col items-center justify-center p-4 rounded-xl border-2 border-surface-container-high bg-surface text-on-surface-variant hover:border-outline-variant transition-all active:scale-95">
+<span class="material-symbols-outlined mb-2 text-2xl" data-icon="directions_bike">directions_bike</span>
+<span class="text-[11px] font-bold uppercase tracking-wide">Volunteer</span>
+</button>
+</div>
+</div>
+<!-- Form Fields -->
+<form class="space-y-6">
+<div>
+<label class="text-xs font-bold uppercase tracking-wider text-outline mb-2 block" for="email">Email Address</label>
+<div class="relative group">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline group-focus-within:text-primary transition-colors" data-icon="mail">mail</span>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl text-on-surface focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all shadow-sm" id="email" placeholder="chef@greenbistro.com" type="email"/>
+</div>
+</div>
+<div>
+<label class="text-xs font-bold uppercase tracking-wider text-outline mb-2 block" for="password">Password</label>
+<div class="relative group">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline group-focus-within:text-primary transition-colors" data-icon="lock">lock</span>
+<input class="w-full pl-12 pr-12 py-4 bg-surface-container-low border-none rounded-xl text-on-surface focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all shadow-sm" id="password" placeholder="••••••••" type="password"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline hover:text-on-surface transition-colors" data-icon="visibility" type="button">visibility</button>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<label class="flex items-center gap-2 cursor-pointer group">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary cursor-pointer" type="checkbox"/>
+<span class="text-sm font-medium text-on-surface-variant group-hover:text-on-surface transition-colors">Remember Me</span>
+</label>
+<a class="text-sm font-bold text-primary hover:text-primary-dim transition-colors" href="#">Forgot Password?</a>
+</div>
+<!-- Primary Login Button -->
+<button class="w-full py-4 bg-gradient-to-r from-primary to-primary-dim text-on-primary font-bold text-lg rounded-2xl shadow-lg hover:shadow-xl transition-all active:scale-[0.98] mt-4 flex items-center justify-center gap-2" type="submit">
+                    Login
+                    <span class="material-symbols-outlined text-xl" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+<div class="relative my-8">
+<div class="absolute inset-0 flex items-center"><div class="w-full border-t border-surface-container-highest"></div></div>
+<div class="relative flex justify-center text-xs uppercase tracking-widest"><span class="bg-surface-container-lowest px-4 text-outline font-bold">Or continue with</span></div>
+</div>
+<!-- Social Login -->
+<button class="w-full py-4 bg-surface border border-outline-variant/20 rounded-xl flex items-center justify-center gap-3 hover:bg-surface-container-low transition-all active:scale-[0.98]">
+<img alt="Google" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCig8HLM6BMm4gWbw3VTc8mJKRjIb3js1gBGUz35VsqjlYeT-MMlbKdwt8B9milA1zjazr8t2BOsAsKoDyZiHIG0izicZrWJF8edTwY3IHwqz5NWpYxasWwMGlsvGgo6rcTDiL36_3aBWkZ2pT0fpq3-hUxhduzZj61VvFNWxsvftoDZTgO84kabl1i36VQUmrsVDqLXPLuRNPAUW58rs5st3wNWwThwmwGSRSfv49xTA3zf5YGU-Jq-v6MOBW6EH85AWO4JVFetyqs"/>
+<span class="font-bold text-on-surface-variant">Sign in with Google</span>
+</button>
+<!-- Bottom Link -->
+<p class="text-center mt-10 text-on-surface-variant">
+                New to FoodBridge? 
+                <a class="text-primary font-bold hover:underline" href="#">Create an Account</a>
+</p>
+</div>
+</main>
+<!-- Footer Meta -->
+<footer class="mt-8 text-outline text-xs font-medium uppercase tracking-[0.1em] flex gap-6">
+<span>Privacy Policy</span>
+<span>Terms of Service</span>
+<span>© 2024 FoodBridge Inc.</span>
+</footer>
+</body></html>
