@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FoodBridge Registration - Restaurant Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#dbdddd",
+              "on-surface": "#2d2f2f",
+              "on-primary": "#d1ffc8",
+              "primary-fixed-dim": "#a4eb9c",
+              "outline-variant": "#acadad",
+              "on-tertiary-fixed-variant": "#634900",
+              "background": "#f6f6f6",
+              "tertiary-container": "#fec330",
+              "tertiary": "#765600",
+              "surface-container-lowest": "#ffffff",
+              "secondary-dim": "#3e535c",
+              "surface": "#f6f6f6",
+              "inverse-primary": "#b2faa9",
+              "on-tertiary": "#fff1db",
+              "tertiary-fixed": "#fec330",
+              "secondary-container": "#cfe6f2",
+              "surface-dim": "#d3d5d5",
+              "on-secondary-fixed": "#2d424c",
+              "on-background": "#2d2f2f",
+              "tertiary-dim": "#674b00",
+              "surface-bright": "#f6f6f6",
+              "primary": "#266829",
+              "tertiary-fixed-dim": "#efb520",
+              "on-tertiary-fixed": "#402d00",
+              "secondary-fixed-dim": "#c1d8e4",
+              "on-error": "#ffefec",
+              "on-primary-container": "#1f6223",
+              "surface-tint": "#266829",
+              "inverse-surface": "#0c0f0f",
+              "on-surface-variant": "#5a5c5c",
+              "on-primary-fixed-variant": "#2a6c2c",
+              "primary-container": "#b2faa9",
+              "surface-container-low": "#f0f1f1",
+              "surface-container": "#e7e8e8",
+              "inverse-on-surface": "#9c9d9d",
+              "on-secondary": "#e4f5ff",
+              "secondary-fixed": "#cfe6f2",
+              "on-primary-fixed": "#054e12",
+              "on-error-container": "#520c00",
+              "primary-dim": "#185c1e",
+              "on-secondary-fixed-variant": "#495f69",
+              "surface-container-high": "#e1e3e3",
+              "primary-fixed": "#b2faa9",
+              "on-tertiary-container": "#584000",
+              "secondary": "#495f69",
+              "surface-variant": "#dbdddd",
+              "error": "#b02500",
+              "on-secondary-container": "#40555f",
+              "error-container": "#f95630",
+              "outline": "#767777",
+              "error-dim": "#b92902"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .bg-glass {
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(20px);
+      }
+      .cta-gradient {
+        background: linear-gradient(135deg, #266829 0%, #185c1e 100%);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body antialiased min-h-screen flex flex-col">
+<!-- TopAppBar Shell (Suppressed Navigation for Task Focus) -->
+<header class="fixed top-0 w-full z-50 bg-white/60 backdrop-blur-xl shadow-[0_12px_32px_rgba(45,47,47,0.06)]">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined text-on-surface" data-icon="arrow_back">arrow_back</span>
+</button>
+<span class="text-2xl font-extrabold text-green-900 tracking-tight font-headline">FoodBridge</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-on-surface-variant font-label text-sm font-semibold uppercase tracking-wider">Step 2 of 2</span>
+</div>
+</div>
+</header>
+<main class="flex-grow pt-24 pb-12 px-6">
+<div class="max-w-4xl mx-auto">
+<!-- Header Section -->
+<div class="mb-12">
+<h1 class="text-4xl md:text-5xl font-extrabold text-on-surface font-headline tracking-tight mb-4">Restaurant Details</h1>
+<p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed">
+                    Help us understand your kitchen's capacity and location to streamline food recovery logistics.
+                </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Registration Form -->
+<form class="lg:col-span-7 space-y-8">
+<!-- Progress Bar (Editorial Style) -->
+<div class="flex gap-2 w-full h-1.5 mb-8">
+<div class="flex-1 bg-primary rounded-full"></div>
+<div class="flex-1 bg-primary rounded-full"></div>
+</div>
+<!-- Input Group: Name -->
+<div class="space-y-2">
+<label class="block text-sm font-bold font-label uppercase tracking-wider text-on-surface-variant">Restaurant Name</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 text-on-surface focus:ring-2 focus:ring-primary shadow-sm" placeholder="e.g. Green Bistro" type="text"/>
+</div>
+<!-- Input Group: Food Type -->
+<div class="space-y-4">
+<label class="block text-sm font-bold font-label uppercase tracking-wider text-on-surface-variant">Food Type Selection</label>
+<div class="grid grid-cols-3 gap-3">
+<button class="flex flex-col items-center justify-center p-4 rounded-xl bg-surface-container-lowest border-2 border-transparent hover:border-primary-fixed-dim transition-all group active:scale-95" type="button">
+<span class="material-symbols-outlined text-3xl mb-2 text-primary" data-icon="eco">eco</span>
+<span class="text-sm font-semibold">Veg</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 rounded-xl bg-surface-container-lowest border-2 border-primary bg-primary-container/10 transition-all group active:scale-95" type="button">
+<span class="material-symbols-outlined text-3xl mb-2 text-primary" data-icon="restaurant" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="text-sm font-bold text-primary">Both</span>
+</button>
+<button class="flex flex-col items-center justify-center p-4 rounded-xl bg-surface-container-lowest border-2 border-transparent hover:border-primary-fixed-dim transition-all group active:scale-95" type="button">
+<span class="material-symbols-outlined text-3xl mb-2 text-primary" data-icon="kebab_dining">kebab_dining</span>
+<span class="text-sm font-semibold">Non-Veg</span>
+</button>
+</div>
+</div>
+<!-- Input Group: Operating Hours & ID -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="block text-sm font-bold font-label uppercase tracking-wider text-on-surface-variant">Operating Hours</label>
+<div class="relative">
+<span class="absolute left-4 top-4 material-symbols-outlined text-on-surface-variant" data-icon="schedule">schedule</span>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 pl-12 text-on-surface focus:ring-2 focus:ring-primary shadow-sm" placeholder="09:00 AM - 11:00 PM" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block text-sm font-bold font-label uppercase tracking-wider text-on-surface-variant">License / Verification ID (Optional)</label>
+<div class="relative">
+<span class="absolute left-4 top-4 material-symbols-outlined text-on-surface-variant" data-icon="verified_user">verified_user</span>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 pl-12 text-on-surface focus:ring-2 focus:ring-primary shadow-sm" placeholder="FSSAI-12345678" type="text"/>
+</div>
+</div>
+</div>
+<!-- Actions -->
+<div class="pt-8 flex flex-col md:flex-row gap-4">
+<button class="flex-1 px-8 py-4 rounded-xl bg-surface-container-highest text-on-surface font-bold hover:bg-surface-dim transition-colors active:scale-95" type="button">
+                            Back
+                        </button>
+<button class="flex-[2] px-8 py-4 rounded-xl cta-gradient text-on-primary font-bold shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all active:scale-95 flex items-center justify-center gap-2" type="submit">
+                            Complete Registration
+                            <span class="material-symbols-outlined" data-icon="done_all">done_all</span>
+</button>
+</div>
+</form>
+<!-- Sidebar Content (Map & Help) -->
+<div class="lg:col-span-5 space-y-6">
+<!-- Map Picker Card -->
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_12px_32px_rgba(45,47,47,0.06)] group">
+<div class="p-6">
+<h3 class="font-headline font-bold text-xl mb-1">Restaurant Location</h3>
+<p class="text-on-surface-variant text-sm mb-4">Select the pickup point for donation drivers</p>
+</div>
+<div class="h-64 bg-surface-container relative">
+<img class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="clean minimal digital map interface showing urban street grid with a green location pin in the center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiwVJJwhkxRu1uzHBu0lzcYOtcyxNS_3K4pUK-CMLwhXhfpRYYaDB7v8cfjNOSdMWzjOxsm0XJEQpF5RKZuBLOKl6qxbqSaJE7RMyr901o-E3BnUPA4jH-iFKjdb5a40it8IYk6pxfcRlX00K1McspupFLMFr5GwEnZ3gpB-YkRPXrPfXMSxKWatn6OeZAfPtepFKlBRSHFKujzmF9M_grRv8iRczozVk-f9EwcMnod8iNhLpNzfNiLTxX8oqbTxrtaFpUua9P3gF1"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-xl ring-4 ring-white/30">
+<span class="material-symbols-outlined text-3xl" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+<!-- Map Address Overlay -->
+<div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-3 rounded-xl flex items-center gap-3 shadow-lg">
+<span class="material-symbols-outlined text-primary" data-icon="map">map</span>
+<span class="text-xs font-semibold text-on-surface truncate">241 Garden Street, Green Valley, CA 90210</span>
+</div>
+</div>
+<button class="w-full py-4 text-primary font-bold text-sm bg-primary-container/20 hover:bg-primary-container/40 transition-colors uppercase tracking-widest">
+                            Change Address
+                        </button>
+</div>
+<!-- Info/Tip Card -->
+<div class="bg-secondary-container rounded-2xl p-6 relative overflow-hidden">
+<div class="relative z-10">
+<div class="flex items-center gap-2 text-secondary mb-3">
+<span class="material-symbols-outlined" data-icon="tips_and_updates">tips_and_updates</span>
+<span class="font-bold uppercase tracking-wider text-xs">Sustainability Tip</span>
+</div>
+<p class="text-on-secondary-container font-medium leading-relaxed">
+                                Accurate operating hours help our NGO partners schedule pickups when your staff is most available to assist.
+                            </p>
+</div>
+<span class="material-symbols-outlined absolute -bottom-4 -right-4 text-9xl text-white/20 rotate-12" data-icon="compost">compost</span>
+</div>
+<!-- Trust Badge -->
+<div class="flex items-center gap-4 px-2">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary-dim">
+<span class="material-symbols-outlined" data-icon="security" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<div>
+<p class="text-sm font-bold text-on-surface">Secure Verification</p>
+<p class="text-xs text-on-surface-variant">Your documents are encrypted and only used for NGO trust verification.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Contextual Footer (Bento Style) -->
+<footer class="mt-auto py-8 px-6 bg-surface-container-low border-t border-outline-variant/10">
+<div class="max-w-4xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-6">
+<div class="flex -space-x-3">
+<img class="w-8 h-8 rounded-full border-2 border-white object-cover" data-alt="close up of a professional chef smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEsZFCZir2PUKFEjOyHV9E93W0ZoBTNXvcZVTsfMFBdV-A-RNysDN9U8LnCYvqYnAWr2BD-0j3EE9I9hzXN1W76g00jRBeblGIieX6EzTZ0LJZAKky4gnbMnqzr7c49NUcaUTs2xGRisKClgCHPh4K733X-xqK7eFxI7nkP3hLc4Y43qGyfWQ4l97fVdpU1OB_wYNKXrirB5JX7okMQHBxkgykOb343WAJxCzmdm40-e9UkKzKnGWk3VBmYqhYmsP3SWeTM9VzxyYT"/>
+<img class="w-8 h-8 rounded-full border-2 border-white object-cover" data-alt="woman volunteer portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkR0r2udKjrAsRua8gWLKK4zu3lKjLg9Gsba8XP4zAuM6xXYYucpZ9GgKcwoldgOu1ZsWi3Rqq_xF6ZmkBMzVCflr_9dKPRu4V6Z9H81mbvbyr7xbNelE4jj0MbpOEoQPbLueYIb-o_SLIU4OzrDmJmVY3XDuCg-ui-UoXbDn2Nmm3hy_MWJnwm-2RwWe7iwfuiRETfrqMCP-T7uiVaM2nIogOPm_uKk2Cjd3jV-SKVs9uePyCulMLPP0upDLdNfD34fhEV4EsGqwT"/>
+<div class="w-8 h-8 rounded-full bg-primary text-[10px] flex items-center justify-center text-on-primary border-2 border-white font-bold">+2k</div>
+</div>
+<p class="text-sm text-on-surface-variant font-medium">Joined by 2,000+ restaurants nationwide</p>
+</div>
+<div class="flex gap-6 text-sm font-label font-semibold text-on-surface-variant uppercase tracking-widest">
+<a class="hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms</a>
+<a class="hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>
